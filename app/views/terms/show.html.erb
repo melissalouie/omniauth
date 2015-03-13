@@ -1,11 +1,6 @@
-Welcome <%= @name %>
-
-Let's search for articles!
-
-
-
+Results
 <ul>
   <% @articles["response"]["docs"].each do |article| %>
     <li><%= article["headline"]["main"] %></li>
   <% end %>
-</ul>
+</ul>    
